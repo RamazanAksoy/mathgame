@@ -22,9 +22,22 @@ class _GameDetailsState extends State<GameDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+         floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return const AlertDialog(
+                  title: Text("Alert Dialog"),
+                  content: Text("Dialog Content"),
+                );
+              });
+        },
+        child: const Icon(Icons.add),
+      ), 
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
         elevation: 0.2,
         title: Text(
           widget.title,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:math/page/home.dart';
+import 'package:math/ui/page/home.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
